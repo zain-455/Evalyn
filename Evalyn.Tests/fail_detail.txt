@@ -1,0 +1,46 @@
+﻿Test run for D:\My Projects\Antigravity\FYP VS Code\Evalyn.Tests\bin\Debug\net10.0\Evalyn.Tests.dll (.NETCoreApp,Version=v10.0)
+VSTest version 18.0.1 (x64)
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+dotnet : [xUnit.net 
+00:00:00.27]     Evalyn.Tes
+ts.IRTEngineTests.EstimateT
+heta_AllWrong_ThetaBelowEas
+iestItem [FAIL]
+At line:1 char:1
++ dotnet test --no-build 
+--filter "AllCorrect_ThetaA
+boveHardestItem|All ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([xU  
+  nit.net 00:0...iestIte   
+ m [FAIL]:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[xUnit.net 00:00:00.28]    
+ Evalyn.Tests.IRTEngineTest
+s.EstimateTheta_AllCorrect_
+ThetaAboveHardestItem 
+[FAIL]
+  Failed Evalyn.Tests.IRTEngineTests.EstimateTheta_AllWrong_ThetaBelowEasiestItem [12 ms]
+  Error Message:
+   Expected theta < -2.0 for all-wrong responses, got -1
+  Stack Trace:
+     at Evalyn.Tests.IRTEngineTests.EstimateTheta_AllWrong_ThetaBelowEasiestItem() in D:\My Projects\Antigravity\FYP VS Code\Evalyn.Tests\IRTEngineTests.cs:line 153
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+  Failed Evalyn.Tests.IRTEngineTests.EstimateTheta_AllCorrect_ThetaAboveHardestItem [1 ms]
+  Error Message:
+   Expected theta > 1.0 for all-correct responses, got 1
+  Stack Trace:
+     at Evalyn.Tests.IRTEngineTests.EstimateTheta_AllCorrect_ThetaAboveHardestItem() in D:\My Projects\Antigravity\FYP VS Code\Evalyn.Tests\IRTEngineTests.cs:line 138
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+Failed!  - Failed:     2, Passed:     1, Skipped:     0, Total:     3, Duration: 51 ms - Evalyn.Tests.dll (net10.0)

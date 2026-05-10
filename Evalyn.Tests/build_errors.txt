@@ -1,0 +1,10 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Evalyn.API -> D:\My Projects\Antigravity\FYP VS Code\Evalyn.API\bin\Debug\net10.0\Evalyn.API.dll
+  Evalyn.Tests -> D:\My Projects\Antigravity\FYP VS Code\Evalyn.Tests\bin\Debug\net10.0\Evalyn.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.47

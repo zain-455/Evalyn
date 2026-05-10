@@ -1,0 +1,142 @@
+node.exe : X [ERROR] 
+Expected "}" but found "&&"
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (X [  
+  ERROR] Expected "}" bu   
+ t found "&&":String) [    
+], RemoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+    src/components/ExamBuil
+der/QuestionSelectionModal.
+jsx:9:25:
+      9 ???       
+{{bankModalVisible && 
+createPortal(
+        ???                
+          ~~
+        ???                
+          }
+
+X [ERROR] Unexpected 
+closing fragment tag does 
+not match opening "div" tag
+
+    src/components/ExamBuil
+der/SelectedQuestionList.js
+x:219:6:
+      219 ???     </>
+          ???       ^
+          ???       div
+
+  The opening "div" tag is 
+here:
+
+    src/components/ExamBuil
+der/SelectedQuestionList.js
+x:11:7:
+      11 ???       <div 
+style={{
+         ???        ~~~
+
+??? [WARNING] The 
+character "}" is not valid 
+inside a JSX element
+
+    src/components/ExamBuil
+der/SelectedQuestionList.js
+x:221:0:
+      221 ??? }
+          ??? ^
+          ??? {'}'}
+
+  Did you mean to escape 
+it as "{'}'}" instead?
+
+X [ERROR] Unexpected end 
+of file before a closing 
+fragment tag
+
+    src/components/ExamBuil
+der/SelectedQuestionList.js
+x:222:0:
+      222 ??? 
+          ??? ^
+          ??? </>
+
+  The opening fragment tag 
+is here:
+
+    src/components/ExamBuil
+der/SelectedQuestionList.js
+x:9:5:
+      9 ???     <>
+        ???      ^
+
+1 warning and 3 errors
+node:child_process:964
+    throw err;
+    ^
+
+Error: Command failed: 
+D:\My 
+Projects\Antigravity\FYP 
+VS Code\evalyn-client\node_
+modules\@esbuild\win32-x64\
+esbuild.exe src/pages/instr
+uctor/ExamBuilder.jsx src/c
+omponents/ExamBuilder/Quest
+ionSelectionModal.jsx src/c
+omponents/ExamBuilder/ExamS
+ettingsPanel.jsx src/compon
+ents/ExamBuilder/SelectedQu
+estionList.jsx --outdir=out
+    at genericNodeError (no
+de:internal/errors:985:15)
+    at wrappedFn (node:inte
+rnal/errors:539:14)
+    at checkExecSyncError 
+(node:child_process:925:11)
+    at Object.execFileSync 
+(node:child_process:961:15)
+    at Object.<anonymous> 
+(D:\My 
+Projects\Antigravity\FYP 
+VS Code\evalyn-client\node_
+modules\esbuild\bin\esbuild
+:222:28)
+    at Module._compile (nod
+e:internal/modules/cjs/load
+er:1812:14)
+    at Object..js (node:int
+ernal/modules/cjs/loader:19
+43:10)
+    at Module.load (node:in
+ternal/modules/cjs/loader:1
+533:32)
+    at Module._load (node:i
+nternal/modules/cjs/loader:
+1335:12)
+    at wrapModuleLoad (node
+:internal/modules/cjs/loade
+r:255:19) {
+  status: 1,
+  signal: null,
+  output: [ null, null, 
+null ],
+  pid: 14880,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v24.14.0

@@ -1,0 +1,324 @@
+.student-page {
+  position: relative;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #fff;
+}
+
+.student-toolbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.student-toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.student-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.student-toolbar-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.35rem 0 0.9rem;
+}
+
+.student-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.student-filter-label {
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.custom-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown-trigger {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: white;
+  border-radius: 100px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 180px;
+  height: 46px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.custom-dropdown-trigger:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.custom-dropdown-trigger.open {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.custom-dropdown-arrow {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 1px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.custom-dropdown-trigger.open .custom-dropdown-arrow {
+  transform: rotate(-180deg);
+}
+
+.custom-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: rgba(25, 25, 30, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  padding: 0.5rem;
+  min-width: 100%;
+  z-index: 100;
+  animation: dropdownFadeIn 0.2s ease forwards;
+}
+
+.custom-dropdown-item {
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.custom-dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.custom-dropdown-item.selected {
+  background: rgba(217, 143, 48, 0.1);
+  color: #d98f30;
+  font-weight: 600;
+}
+
+@keyframes dropdownFadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.student-count {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.98rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.student-count-label {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.student-count-number {
+  font-weight: 800;
+  color: #d98f30;
+  letter-spacing: 0.01em;
+}
+
+/* Student page search icon should be white (header stays unchanged) */
+.student-toolbar-right .search-bar-container .search-icon-wrapper {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.student-toolbar-right .search-bar-container:focus-within .search-icon-wrapper {
+  color: #1a1a1a;
+}
+
+.student-toolbar-right .search-input {
+  color: #000;
+  font-weight: 300;
+}
+
+.student-toolbar-right .search-input::placeholder {
+  color: rgba(0, 0, 0, 0.65);
+  font-weight: 300;
+}
+
+.student-table-wrap {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.student-table-panel {
+  width: 100%;
+  margin-top: 0.75rem;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: auto;
+}
+
+.student-table thead th {
+  text-align: left;
+  padding: 1rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.student-table .student-col-institution {
+  min-width: 240px;
+  width: 28%;
+}
+
+.student-table thead th:last-child {
+  border-right: none;
+}
+
+.student-table tbody tr {
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.student-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.student-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.student-table tbody td {
+  padding: 1rem 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  vertical-align: middle;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.student-table tbody td:last-child {
+  border-right: none;
+}
+
+.student-title-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.05rem;
+  word-wrap: break-word;
+}
+
+.student-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.student-meta-icon {
+  flex: 0 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-top: 0.1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.student-subtext {
+  min-width: 0;
+  word-wrap: break-word;
+  white-space: normal;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.student-session-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.student-session-assessments {
+  margin-top: 0.45rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.student-assessment-chip {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.student-assessment-more {
+  font-size: 0.7rem;
+  color: rgba(217, 143, 48, 0.9);
+  font-weight: 600;
+}
+
+.student-session-empty {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.student-empty, .student-error, .student-loading {
+  padding: 3rem 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1rem;
+}

@@ -1,0 +1,15 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,31): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,88): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,110): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+
+Build FAILED.
+
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,31): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,88): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+D:\My Projects\FYP\Evalyn.API\Program.cs(68,110): error CS0246: The type or namespace name 'IRTSettings' could not be found (are you missing a using directive or an assembly reference?) [D:\My Projects\FYP\Evalyn.API\Evalyn.API.csproj]
+    0 Warning(s)
+    3 Error(s)
+
+Time Elapsed 00:00:01.95

@@ -1,0 +1,32 @@
+# --- .NET ---
+**/bin/
+**/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# --- Node / Vite ---
+**/node_modules/
+**/dist/
+**/.vite/
+
+# --- Local env/secrets ---
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# --- Build/check temp outputs in this repo ---
+_buildtemp/
+**/_buildtemp/
+**/_BuildCheck/
+**/_BuildCheckResume/
+
+# --- Test outputs ---
+**/TestResults/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
